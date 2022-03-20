@@ -54,6 +54,7 @@ public class    IndexController {
     @RequestMapping("/getAllTeam")
     @ResponseBody
     public List<Team> getAllTeam() {
+    	System.out.println("Get all team information");
     	List<Team> teams = teamService.getAllTeams();
     	return teams;
     }
